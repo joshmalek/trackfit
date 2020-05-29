@@ -9,3 +9,7 @@ The MERN stack consists of:
     Node.js: Javascript run-time enviroment that executes Javascript code outside of a browser
     Mongoose: schema-based solution to model application data
    
+Backend Dependencies:
+   
+    Bootstrap
+    nodemon
