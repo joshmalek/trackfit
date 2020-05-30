@@ -11,5 +11,13 @@ The MERN stack consists of:
    
 Backend Dependencies:
    
-    Bootstrap
-    nodemon
+    cors
+    dotenv
+    express
+    mongoose
+    
+Frontend Dependencies:
+    bootstrap
+    react-dom
+    react-router-dom
+
