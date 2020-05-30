@@ -17,6 +17,7 @@ Backend Dependencies:
     mongoose
     
 Frontend Dependencies:
+
     bootstrap
     react-dom
     react-router-dom
