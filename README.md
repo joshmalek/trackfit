@@ -12,8 +12,29 @@ The MERN stack consists of:
 Notes:
 axios was used to connect the frontend to the backend, and was installed separtely through npm.  axios can make POST and GET requests to our server endpoint.
 
-Backend Dependencies:
-   
+Backend In-depth:
+
+I built a server running on Express, which allowed us to run on localhost port 5000, and listen for incoming http requests.  Using Mongoose, we were able to connect our server to our MongoDB database.  Our credentials were handled with dotenv, which is great because it allows us to create a .env file which can contain sensitive keys and credentials.  Whenever we want to use credentials from .env, we simply call process.env.credential.  Another package we used was cors, which allows servers to specify not just who can access its assets, but also how the assets can be accessed.  This is middleware for Express that helps tighten security.  The two models we used are the Exercise model, and the User model.
+
+Exercise: 
+
+
+Within our server we had two routes, /exercises and /users.
+
+/exercises:
+
+    ../ -> endpoint to retrieve a list of all exercises
+    ../add -> endpoint to add new exercises
+    ../:id (GET) -> endpoint to retrieve exercise by id
+    ../:id (DELETE) -> endpoint to delete exercise by id
+    ../update/:id -> endpoint to update exercise by id
+    
+/users:
+    
+    ../ -> endpoint to retrieve a list of all users
+    ../add -> endpoint to add new users
+    
+Backend dependencies:
     cors
     dotenv
     express
