@@ -1,5 +1,5 @@
 # trackfit
-A fitness tracker built with the MERN stack.
+A fitness tracker built with the MERN stack.  The tracker takes input in the form of username, exercise and length of exercise.  It can then allow a user to view their exercises, or add new ones.
 
 The MERN stack consists of:
 
