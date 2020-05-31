@@ -101,7 +101,7 @@ export default class createExercise extends Component {
                             className="form-control"
                             value={this.state.description}
                             onChange={this.onChangeDescription}
-                            />
+                        />
                     </div>
                     <div className="form-group">
                         <label>Duration (in minutes): </label>
@@ -110,7 +110,7 @@ export default class createExercise extends Component {
                             className="form-control"
                             value={this.state.duration}
                             onChange={this.onChangeDuration}
-                            />
+                        />
                     </div>
                     <div className="form-group">
                         <label>Date: </label>
