@@ -1,10 +1,10 @@
 const router = require('express').Router();
-let Exercise = require('../models/user.model');
+let Exercise = require('../models/exercise.model');
 
 //endpoint to handle incoming http GET request on the /users path
 router.route('/').get((req, res) => {
     //mongoose method gives a list of all the users from the mongodb database in json 
-    User.find()
+    Exercise.find()
         .then(exercises => res.json(exercises))
         .catch(err => res.status(400).json('Error: ' + err));
 });
