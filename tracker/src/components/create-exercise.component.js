@@ -79,7 +79,7 @@ export default class createExercise extends Component {
             .then(res => console.log(res.data));
         
         //sends us back to the list of exercises
-        //window.location = '/';
+        window.location = '/';
     }
 
     render() {
