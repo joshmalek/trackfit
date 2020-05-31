@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 export default class createUser extends Component {
     constructor(props){
@@ -28,6 +29,10 @@ export default class createUser extends Component {
 
         console.log(user);
         
+        //axios interacts with our backend by making post requests to our server
+        axios.post("http://localhost:5000/users/add",user)
+            .then(res => console.log(res.data));
+
         //sends us back to the list of exercises
         this.setState({
             username: ''
