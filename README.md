@@ -63,6 +63,19 @@ The frontend was built with React, with the main extensions being Bootstrap, rea
 
 Exercises:
 
+![Main site](/img/exercises.PNG)
+
+Create Exercise Log:
+
+![Create Exercise](/img/create-exercise.PNG)
+
+Create Exercise Log:
+
+![Create Exercise](/img/create-user.PNG)
+
+Create Exercise Log:
+
+![Create Exercise](/img/edit-exercise.PNG)
 
 Notes:
 axios was used to connect the frontend to the backend, and was installed separtely through npm.  axios can make POST and GET requests to our server endpoint.    
