@@ -35,6 +35,9 @@ export default class editExercise extends Component {
                     username: new Date(response.data.date)
                 })
             })
+            .catch(function(error){
+                console.log(error);
+            })
         //this code retrieves all of the usernames in the database when the page loads,
         //and displays them in the form to select from when creating an exercise
         axios.get('http://localhost:5000/users/')
@@ -84,7 +87,7 @@ export default class editExercise extends Component {
             date: this.state.date
         }
 
-        axios.post("http://localhost:5000/exercises/add",exercise)
+        axios.post("http://localhost:5000/exercises/update/"+this.props.match.params.id,exercise)
             .then(res => console.log(res.data));
         
         //sends us back to the list of exercises
@@ -94,7 +97,7 @@ export default class editExercise extends Component {
     render() {
         return(
             <div>
-                <h3>Create New Exercise Log</h3>
+                <h3>Edit Exercise Log</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
@@ -140,7 +143,7 @@ export default class editExercise extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
+                        <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
                     </div>
                 </form>
             </div>
