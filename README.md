@@ -1,5 +1,5 @@
 # trackfit
-### Description ###
+### Description
 A fitness tracker built with the MERN stack.  The tracker takes input in the form of username, exercise and length of exercise.  It can then allow a user to view their exercises, or add new ones.
 
 The MERN stack consists of:
@@ -12,9 +12,9 @@ The MERN stack consists of:
 
 
 
-### Backend In-depth ###
+### Backend In-depth
 
-I built a server running on Express, which allowed us to run on localhost port 5000, and listen for incoming http requests.  Using Mongoose, we were able to connect our server to our MongoDB database.  Our credentials were handled with dotenv, which is great because it allows us to create a .env file which can contain sensitive keys and credentials.  Whenever we want to use credentials from .env, we simply call process.env.credential.  Another package we used was cors, which allows servers to specify not just who can access its assets, but also how the assets can be accessed.  This is middleware for Express that helps tighten security.  
+The server is running on Express, which allowed us to run on localhost port 5000, and listen for incoming http requests.  Using Mongoose, we were able to connect our server to our MongoDB database.  Our credentials were handled with dotenv, which is great because it allows us to create a .env file which can contain sensitive keys and credentials.  Whenever we want to use credentials from .env, we simply call process.env.credential.  Another package we used was cors, which allows servers to specify not just who can access its assets, but also how the assets can be accessed.  This is middleware for Express that helps tighten security.  
 
 #### Schemas
 The two models we used are the Exercise model schema, and the User model schema.  Both were Mongoose schemas, which allows clean integration with MongoDB.
@@ -30,7 +30,7 @@ User schema:
     
     username: String
 
-#### Routes ####
+#### Routes
 Within our server we had two routes, /exercises and /users.
 
 /exercises route:
@@ -53,7 +53,14 @@ Backend dependencies:
     express
     mongoose
     
-Frontend In-depth:
+### Frontend In-depth
+
+The frontend was built with React, with the main extensions being Bootstrap, react-router-dom, and axios.  Bootstrap is a library that makes our page reactive to resizing, and is in general great for easy page styling.  react-router-dom allows us to route to other components on our site easily, while axios is used to connect the frontend to backend with simple HTML calls.  React is a component framework, and our page is made up of 5 main components.  We have the Navbar at the top, which uses mostly Bootstrap styling.  The Navbar contains our three main components, Exercises, Create Exercise Log, and Create User.  We have a fifth component, Edit Exercise, which is only accessible from the main Exercises list.  
+
+#### Components
+
+Exercises:
+
 
 Notes:
 axios was used to connect the frontend to the backend, and was installed separtely through npm.  axios can make POST and GET requests to our server endpoint.    
@@ -61,6 +68,5 @@ axios was used to connect the frontend to the backend, and was installed separte
 Frontend Dependencies:
 
     bootstrap
-    react-dom
     react-router-dom
 
