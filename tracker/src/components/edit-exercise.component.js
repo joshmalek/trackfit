@@ -30,9 +30,9 @@ export default class editExercise extends Component {
             .then(response => {
                 this.setState({
                     username: response.data.username,
-                    username: response.data.description,
-                    username: response.data.duration,
-                    username: new Date(response.data.date)
+                    description: response.data.description,
+                    duration: response.data.duration,
+                    date: new Date(response.data.date)
                 })
             })
             .catch(function(error){
