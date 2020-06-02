@@ -60,7 +60,7 @@ The frontend was built with React, with the main extensions being Bootstrap, rea
 #### Components
 
 Exercises:
-
+This is the main homepage that is returned after most operations.  It has a table with all the exercises as entries, and the users and date completed.  It also allows redirects for editing and deleting an entry.
 ![Exercises](/img/exercises.PNG)
 
 Create Exercise Log:
