@@ -64,7 +64,7 @@ This is the main homepage that is returned after most operations.  It has a tabl
 ![Exercises](/img/exercises.PNG)
 
 Create Exercise Log:
-
+This is where an exercise log is created.  A user must choose which user they are, provide a description for the exercise and the amount of time completed.  They also choose a date from a dropdown calendar, which is implemented with the date-fns package.
 ![Create Exercise](/img/create-exercise.PNG)
 
 Create User:
