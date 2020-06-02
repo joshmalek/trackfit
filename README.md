@@ -68,7 +68,7 @@ This is where an exercise log is created.  A user must choose which user they ar
 ![Create Exercise](/img/create-exercise.PNG)
 
 Create User:
-
+The Create User component is simple, providing only a bar to enter in the new user to be created.
 ![Create User](/img/create-user.PNG)
 
 Edit Exercise Log:
