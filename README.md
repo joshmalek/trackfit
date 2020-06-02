@@ -61,17 +61,21 @@ The frontend was built with React, with the main extensions being Bootstrap, rea
 
 Exercises:
 This is the main homepage that is returned after most operations.  It has a table with all the exercises as entries, and the users and date completed.  It also allows redirects for editing and deleting an entry.
+
 ![Exercises](/img/exercises.PNG)
 
 Create Exercise Log:
 This is where an exercise log is created.  A user must choose which user they are, provide a description for the exercise and the amount of time completed.  They also choose a date from a dropdown calendar, which is implemented with the date-fns package.
+
 ![Create Exercise](/img/create-exercise.PNG)
 
 Create User:
 The Create User component is simple, providing only a bar to enter in the new user to be created.
+
 ![Create User](/img/create-user.PNG)
 
 Edit Exercise Log:
+This component simply allows the user to edit an exercise already in the database, and is only accessible through the edit button for that exercise.  The log is updated in the database through a POST call.
 
 ![Edit Exercise](/img/edit-exercise.PNG)
 
