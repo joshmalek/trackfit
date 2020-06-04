@@ -73,7 +73,7 @@ This is where an exercise log is created.  A user must choose which user they ar
 
 ##### Create User:
 
-The Create User component is simple, providing only a bar to enter in the new user to be created.
+The Create User component is simple, providing only a bar to enter in the new user to be created.  The user is added to the database through a POST call.
 
 ![Create User](/img/create-user.PNG)
 
