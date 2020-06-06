@@ -88,3 +88,4 @@ Frontend Dependencies:
     bootstrap
     react-router-dom
 
+Inspired by Beau at FreeCodeCamp.
