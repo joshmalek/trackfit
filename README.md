@@ -83,7 +83,7 @@ This component simply allows the user to edit an exercise already in the databas
 ![Edit Exercise](/img/edit-exercise.PNG)
 
 
-Frontend Dependencies:
+Frontend Packages:
 
     bootstrap
     react-router-dom
