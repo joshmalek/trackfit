@@ -55,7 +55,7 @@ Backend dependencies:
     
 ### Frontend In-depth
 
-The frontend was built with React, with the main extensions being Bootstrap, react-router-dom, and axios.  Bootstrap is a library that makes our page reactive to resizing, and is great for easy page styling.  react-router-dom allows us to route to other components on our site easily, while axios is used to connect the frontend to backend with simple HTML calls.  React is a component framework, and our page is made up of 5 main components.  We have the Navbar at the top, which uses mostly Bootstrap styling.  The Navbar contains our three main components, Exercises, Create Exercise Log, and Create User.  We have a fifth component, Edit Exercise, which is only accessible from the main Exercises list.  
+The frontend was built with React, with the main extensions being Bootstrap, react-router-dom, and axios.  Bootstrap is a library that makes our page reactive to resizing, and is great for easy page styling.  react-router-dom allows us to route to other components on our site easily, while axios is used to connect the frontend to backend with simple HTML calls.  React is a component framework, and our page is made up of 5 main components.  We have the Navbar at the top, which uses mostly Bootstrap styling.  The Navbar contains our three main components, Exercises, Create Exercise Log, and Create User.  We have a fifth component, Edit Exercise, which is accessible from the main Exercises list.  
 
 #### Components
 
